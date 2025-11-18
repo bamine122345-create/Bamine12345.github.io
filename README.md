@@ -1,1 +1,266 @@
-# FynnBaranEnglischProjekt.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Dinslaken - Attractions & Places</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 50%, #c8e6c9 100%);
+            color: #2e7d32;
+            line-height: 1.6;
+            padding: 20px;
+        }
+ 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+ 
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #2e7d32 0%, #43a047 100%);
+            color: white;
+            padding: 50px 20px;
+            margin-bottom: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(46, 125, 50, 0.3);
+        }
+ 
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+ 
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+ 
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+ 
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(46, 125, 50, 0.15);
+            border: 2px solid #e8f5e9;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+ 
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(46, 125, 50, 0.25);
+            border-color: #66bb6a;
+        }
+ 
+        .card h2 {
+            color: #2e7d32;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #66bb6a;
+            padding-bottom: 10px;
+        }
+ 
+        .card p {
+            color: #4a4a4a;
+            font-size: 0.95em;
+        }
+ 
+        .category {
+            display: inline-block;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+ 
+        .category.nature {
+            background: linear-gradient(135deg, #66bb6a, #43a047);
+        }
+ 
+        .category.culture {
+            background: linear-gradient(135deg, #4caf50, #388e3c);
+        }
+ 
+        .category.entertainment {
+            background: linear-gradient(135deg, #81c784, #66bb6a);
+        }
+ 
+        .category.shopping {
+            background: linear-gradient(135deg, #26a69a, #00897b);
+        }
+ 
+        .category.events {
+            background: linear-gradient(135deg, #689f38, #558b2f);
+        }
+ 
+        footer {
+            text-align: center;
+            background: linear-gradient(135deg, #2e7d32 0%, #43a047 100%);
+            color: white;
+            padding: 30px 20px;
+            margin-top: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(46, 125, 50, 0.3);
+        }
+ 
+        footer p {
+            font-size: 1.1em;
+        }
+ 
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+ 
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏰 Discover Dinslaken</h1>
+            <p>Explore the best attractions and places in our beautiful city</p>
+        </header>
+ 
+        <div class="grid">
+            <div class="card">
+                <span class="category nature">Nature</span>
+                <h2>Duck Pond (Ententeich)</h2>
+                <p>A peaceful oasis in the city center where you can relax and watch ducks swimming. Perfect for a quiet afternoon walk or feeding the local wildlife. Popular spot for families and nature lovers.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category nature">Nature</span>
+                <h2>Rotbach Stream</h2>
+                <p>A scenic waterway running through Dinslaken, offering pleasant walking paths along its banks. The Rotbach provides a natural green corridor through the urban landscape, ideal for jogging or cycling.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category nature">Nature</span>
+                <h2>Wohnungswald</h2>
+                <p>A residential forest area providing fresh air and recreational opportunities right in the neighborhood. This green space offers trails for walking and connects residents with nature within the city.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category nature">Nature</span>
+                <h2>Emscher River</h2>
+                <p>An important waterway that has undergone significant ecological restoration. The Emscher represents one of Europe's largest renaturalization projects, transforming from an industrial channel to a living river ecosystem.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category culture">Culture</span>
+                <h2>City Hall (Rathaus)</h2>
+                <p>The administrative heart of Dinslaken, featuring impressive architecture. The Rathaus serves as the center of civic life and stands as an important landmark in the city's historic core.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category culture">Culture</span>
+                <h2>Mill Museum (Mühlenmuseum)</h2>
+                <p>A fascinating museum showcasing the history of mills and traditional grain processing. Visitors can learn about the region's agricultural heritage and see historic milling equipment in action.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category culture">Culture</span>
+                <h2>Castle Theater (Burgtheater)</h2>
+                <p>A cultural venue offering diverse performances including plays, concerts, and special events. The Burgtheater is housed in a historic setting and serves as Dinslaken's premier stage for the performing arts.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category entertainment">Sports</span>
+                <h2>Kathrin's Turk Hall</h2>
+                <p>A modern sports and event facility hosting various athletic activities and community gatherings. This versatile hall serves athletes and residents with its comprehensive sports amenities.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category events">Events</span>
+                <h2>Martini Fair (Martini Kirmes)</h2>
+                <p>Dinslaken's traditional annual fair celebrating St. Martin's Day. This beloved folk festival features rides, games, food stalls, and entertainment, attracting visitors from across the region every autumn.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category shopping">Shopping</span>
+                <h2>Neutor Gallery</h2>
+                <p>A modern shopping center in the heart of Dinslaken offering a variety of retail stores, restaurants, and services. The Neutor Galerie is the perfect destination for shopping, dining, and entertainment.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category entertainment">Entertainment</span>
+                <h2>Kart Arena</h2>
+                <p>An exciting indoor go-kart racing facility where speed enthusiasts can test their driving skills. The Kartarena offers thrilling races for both beginners and experienced drivers in a safe environment.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category entertainment">Sports</span>
+                <h2>DINamare Water Park</h2>
+                <p>A fantastic aquatic center featuring pools, water slides, saunas, and wellness facilities. DINamare offers fun for the whole family with its diverse swimming and relaxation options throughout the year.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category entertainment">Entertainment</span>
+                <h2>Lichtburg Cinema</h2>
+                <p>A popular movie theater showing the latest films in a comfortable setting. The Lichtburg Kino has been entertaining Dinslaken residents for generations with its selection of blockbusters and special screenings.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category entertainment">Entertainment</span>
+                <h2>Super Bowl Hall</h2>
+                <p>A bowling alley offering fun for friends and families with multiple lanes and a lively atmosphere. The Superbowlhalle provides entertainment for all ages with bowling, dining, and special events.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category entertainment">Sports</span>
+                <h2>Ice Rink (Eishalle)</h2>
+                <p>An indoor ice skating facility perfect for recreational skating, ice hockey, and figure skating. The Eishalle welcomes visitors year-round for icy fun and winter sports activities.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category entertainment">Sports</span>
+                <h2>Skate Park (Skaterbahn)</h2>
+                <p>A dedicated facility for skateboarding, inline skating, and BMX riding. The Skaterbahn provides ramps, rails, and obstacles for riders of all skill levels to practice tricks and enjoy action sports.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category culture">Landmark</span>
+                <h2>SUS Square (SUS-Platz)</h2>
+                <p>A central public square serving as a meeting point and event space in Dinslaken. The SU-Platz regularly hosts markets, festivals, and community gatherings, making it a vibrant hub of city life.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category events">Christmas</span>
+                <h2>Advent at the Castle</h2>
+                <p>A magical Christmas market held at the historic castle grounds during the holiday season. This atmospheric event features festive stalls, crafts, mulled wine, and seasonal treats in a romantic medieval setting.</p>
+            </div>
+ 
+            <div class="card">
+                <span class="category events">Christmas</span>
+                <h2>Neutor Christmas Market</h2>
+                <p>A charming Christmas market in the city center offering traditional holiday atmosphere. The Neutor Weihnachtsmarkt delights visitors with seasonal gifts, warm beverages, and festive decorations throughout December.</p>
+            </div>
+        </div>
+ 
+        <footer>
+            <p>🌟 Experience the charm of Dinslaken - Where tradition meets modern living 🌟</p>
+        </footer>
+    </div>
+</body>
+</html>
